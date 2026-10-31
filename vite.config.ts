@@ -1,8 +1,8 @@
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vitest/config';
 import babel from '@rolldown/plugin-babel';
 import tailwindcss from '@tailwindcss/vite';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -12,7 +12,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': new URL('./src', import.meta.url).pathname,
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
   test: {
