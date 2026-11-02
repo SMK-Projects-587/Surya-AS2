@@ -3,6 +3,7 @@ import { useState } from 'react';
 import closeIcon from '@/assets/close.svg';
 import hamIcon from '@/assets/ham.svg';
 import logo from '@/assets/logo.svg';
+import Button from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
 interface NavbarProps {
@@ -38,7 +39,7 @@ export default function Navbar({ className }: NavbarProps) {
             <li key={link.label}>
               <a
                 href={link.href}
-                className="color-links hover:text-primary text-sm"
+                className="text-links hover:text-primary text-sm"
               >
                 {link.label}
               </a>
@@ -46,13 +47,7 @@ export default function Navbar({ className }: NavbarProps) {
           ))}
         </ul>
 
-        <button
-          type="button"
-          className="bg-primary hidden rounded-xl px-7 py-2.5 text-base font-normal text-white transition-opacity hover:opacity-90 md:block"
-        >
-          Get Inspired
-        </button>
-
+        <Button className="hidden md:block">Get Inspired</Button>
         <button
           type="button"
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
@@ -83,12 +78,7 @@ export default function Navbar({ className }: NavbarProps) {
             </li>
           ))}
           <li>
-            <button
-              type="button"
-              className="bg-primary rounded-xl px-8 py-3.5 text-base text-white"
-            >
-              Get Inspired
-            </button>
+            <Button className="px-8 py-4">Get Inspired</Button>
           </li>
         </ul>
       )}
