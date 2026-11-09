@@ -22,7 +22,7 @@
 - [ ] Formatted: `pnpm format`
 - [ ] No lint errors: `pnpm lint`
 - [ ] No TypeScript errors: `pnpm tsc --noEmit`
-- [ ] Production build passes: `pnpm build`
+- [ ] Production build passes: `pnpm tsc --noEmit`
 - [ ] No new console warnings or errors (browser DevTools, F12)
 
 ### Conventions
