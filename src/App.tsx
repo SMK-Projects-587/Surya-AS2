@@ -1,5 +1,5 @@
 import Hero from '@/components/Hero';
-import Mood from '@/components/Mood';
+import MoodSection from '@/components/MoodSection';
 import Navbar from '@/components/Navbar';
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Mood />
+        <MoodSection />
       </main>
     </>
   );
