@@ -15,7 +15,7 @@ const moods: MoodItem[] = [
   { name: 'Humour', count: 74 },
   { name: 'Love', count: 52 },
 ];
-export default function Mood({ className }: MoodProps) {
+export default function MoodSection({ className }: MoodProps) {
   return (
     <section className={cn(className)}>
       <div className="mx-auto flex max-w-[1920px] flex-col gap-4 px-6 py-4">
