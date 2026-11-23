@@ -24,44 +24,47 @@ export default function FooterSection({ className }: FooterProps) {
 
           <nav aria-label="Footer" className="flex gap-4 md:gap-12">
             <div className="md:gap-1">
-              <h2 className="text-heading hidden text-sm md:flex">
+              <h2 className="text-heading font-body hidden text-sm md:flex">
                 <strong>Product</strong>
               </h2>
               <ul className="flex gap-4 md:mt-1 md:flex-col md:gap-1">
                 <li>
-                  <a href="#home" className="text-links text-sm">
+                  <a href="#home" className="text-links font-body text-sm">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#explore" className="text-links text-sm">
+                  <a href="#explore" className="text-links font-body text-sm">
                     Explore
                   </a>
                 </li>
                 <li className="hidden md:block">
-                  <a href="#categories" className="text-links text-sm">
+                  <a
+                    href="#categories"
+                    className="text-links font-body text-sm"
+                  >
                     Categories
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="text-heading hidden text-sm md:flex">
+              <h2 className="text-heading font-body hidden text-sm md:flex">
                 <strong>Company</strong>
               </h2>
               <ul className="flex gap-4 md:mt-1 md:flex-col md:gap-1">
                 <li>
-                  <a href="#about" className="text-links text-sm">
+                  <a href="#about" className="text-links font-body text-sm">
                     About
                   </a>
                 </li>
                 <li className="hidden md:block">
-                  <a href="#contact" className="text-links text-sm">
+                  <a href="#contact" className="text-links font-body text-sm">
                     Contact
                   </a>
                 </li>
                 <li className="hidden md:block">
-                  <a href="#privacy" className="text-links text-sm">
+                  <a href="#privacy" className="text-links font-body text-sm">
                     Privacy
                   </a>
                 </li>
@@ -70,7 +73,7 @@ export default function FooterSection({ className }: FooterProps) {
           </nav>
         </div>
 
-        <p className="border-border text-links border-t pt-2 text-sm">
+        <p className="text-links md:border-border md:text-links pt-2 text-sm md:border-t">
           © 2026 Verse. A training project.
         </p>
       </div>
