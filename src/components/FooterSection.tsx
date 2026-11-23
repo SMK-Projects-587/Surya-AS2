@@ -9,7 +9,7 @@ export default function FooterSection({ className }: FooterProps) {
   return (
     <footer
       className={cn(
-        'text-links border-border border-t p-6 text-sm md:p-8 md:pr-20',
+        'text-links border-border border-t px-4 py-6 text-sm md:px-12 md:py-6 md:pr-20',
         className,
       )}
     >
