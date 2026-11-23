@@ -10,3 +10,10 @@
   --font-display: 'Fraunces', serif;
   --font-body: 'Inter', sans-serif;
 }
+@layer base {
+  body {
+    font-family: var(--font-body);
+    color: var(--color-body);
+    background-color: var(--color-background);
+  }
+}
