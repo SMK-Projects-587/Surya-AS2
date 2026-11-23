@@ -1,3 +1,4 @@
+import FooterSection from '@/components/FooterSection';
 import Hero from '@/components/Hero';
 import MoodSection from '@/components/MoodSection';
 import Navbar from '@/components/Navbar';
@@ -12,6 +13,7 @@ export default function App() {
         <Hero />
         <MoodSection />
         <FreshQuotes />
+        <FooterSection />
       </main>
     </>
   );
