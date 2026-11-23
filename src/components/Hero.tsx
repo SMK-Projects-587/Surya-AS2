@@ -9,7 +9,7 @@ interface HeroProps {
 export default function Hero({ className }: HeroProps) {
   return (
     <section className={cn('bg-surface', className)}>
-      <div className="mx-auto flex max-w-[1920px] flex-col gap-2 px-6 py-4 md:flex-row md:items-start md:justify-between md:gap-6 md:px-12 md:py-12">
+      <div className="mx-auto flex max-w-[1920px] flex-col gap-2 px-4 py-6 md:flex-row md:items-start md:justify-between md:gap-6 md:px-12 md:py-6">
         <div className="flex flex-col gap-5 md:flex-1">
           <div className="flex flex-col gap-2">
             <span className="font-body text-primary text-xs">DAILY WISDOM</span>

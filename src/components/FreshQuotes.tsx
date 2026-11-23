@@ -59,8 +59,8 @@ export default function FreshQuotes({ className }: FreshQuotesProps) {
   }, []);
 
   return (
-    <section className={cn(className)}>
-      <div className="bg-background border-border mx-auto flex max-w-[1920px] flex-col gap-1 border px-3 py-3 md:gap-2 md:px-6 md:py-6">
+    <section className={cn('bg-background border-border', className)}>
+      <div className="mx-auto flex max-w-[1920px] flex-col gap-1 border px-4 py-6 md:gap-4 md:px-12 md:py-6">
         <div className="flex items-center justify-between">
           <h2 className="font-display text-heading text-xl md:text-2xl">
             Fresh quotes

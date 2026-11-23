@@ -8,8 +8,8 @@ interface MoodProps {
 
 export default function Mood({ className }: MoodProps) {
   return (
-    <section className={cn(className)}>
-      <div className="mx-auto flex max-w-[1920px] flex-col gap-4 px-6 py-4">
+    <section className={cn('bg-body border-border', className)}>
+      <div className="mx-auto flex max-w-[1920px] flex-col gap-4 px-4 py-6 md:gap-4 md:px-12 md:py-6">
         <h2 className="font-display text-heading text-xl md:text-2xl">
           Browse by mood
         </h2>

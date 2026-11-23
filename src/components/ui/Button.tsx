@@ -14,7 +14,7 @@ export default function Button({ children, className, onClick }: ButtonProps) {
       type="button"
       onClick={onClick}
       className={cn(
-        'bg-primary rounded-xl px-7 py-2.5 text-base font-normal text-white transition-opacity hover:opacity-90',
+        'bg-primary inline-flex cursor-pointer rounded-xl px-7 py-2.5 text-base font-normal text-white transition-opacity hover:opacity-90',
         className,
       )}
     >
