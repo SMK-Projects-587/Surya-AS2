@@ -2,13 +2,13 @@ import type { ReactNode } from 'react';
 
 import { cn } from '@/lib/utils';
 
-interface buttonProps {
+interface ButtonProps {
   children: ReactNode;
   className?: string;
   onClick?: () => void;
 }
 
-export default function Button({ children, className, onClick }: buttonProps) {
+export default function Button({ children, className, onClick }: ButtonProps) {
   return (
     <button
       type="button"
